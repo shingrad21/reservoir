@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- [1단계:확인] 6. 3행3열/4행3열 테이블 만들어 보고, 학생테이블(학생번호, 학생명, 국어, 영어, 수학)를 타이틀과 데이터가 들어간 행태로 테이블을 구성하고 출력하세요 -->
+	<h2>3행3열</h2>
+	<table border>
+		<tr><td>1행1열</td><td>1행2열</td><td>1행3열</td></tr>
+		<tr><td>2행1열</td><td>2행2열</td><td>2행3열</td></tr>
+		<tr><td>3행1열</td><td>3행2열</td><td>3행3열</td></tr>
+	</table>
+
+	<h2>4행3열</h2>
+	<table border>
+		<tr><td>1행1열</td><td>1행2열</td><td>1행3열</td></tr>
+		<tr><td>2행1열</td><td>2행2열</td><td>2행3열</td></tr>
+		<tr><td>3행1열</td><td>3행2열</td><td>3행3열</td></tr>
+		<tr><td>4행1열</td><td>4행2열</td><td>4행3열</td></tr>
+	</table>
+
+	<table border>
+		<caption>성적표</caption>
+		<thead>
+			<tr><th>번호</th><th>이름</th><th>국어</th><th>수학</th><th>영어</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>1번</td><td>장기창</td><td>67점</td><td>45점</td><td>73점</td></tr>
+			<tr><td>2번</td><td>우문창</td><td>98점</td><td>35점</td><td>98점</td></tr>
+			<tr><td>3번</td><td>김호범</td><td>87점</td><td>70점</td><td>91점</td></tr>
+		</tbody>
+	</table>
+
+	<!-- [1단계:개념] 7. 테이블의 병합의 기준과 처리방법을 기본 예제를 통해서 설명하세요 -->
+	<!-- 같은 행의 테이블을 병합하는 경우: <td colspan="합병을 원하는 테이블 숫자"> 기입 후 오른편의 테이블 지우기 -->
+		<h3>1행1열 & 1행2열 & 1행3열 합병</h3>
+	<table border>
+		<tr><td colspan="3">1행1열</td></tr>
+		<tr><td>2행1열</td><td>2행2열</td><td>2행3열</td></tr>
+		<tr><td>3행1열</td><td>3행2열</td><td>3행3열</td></tr>
+	</table>
+
+	<!-- 같은 열의 테이블을 병합하는 경우: <td rowspan="합병을 원하는 테이블 숫자"> 기입 후 하단의 테이블 지우기 -->
+		<h3>1행2열 & 2행2열 & 3행2열 합병</h3>
+	<table border>
+		<tr><td>1행1열</td><td rowspan="3">1행2열</td><td>1행3열</td></tr>
+		<tr><td>2행1열</td><td>2행3열</td></tr>
+		<tr><td>3행1열</td><td>3행3열</td></tr>
+	</table>
+
+<script>
+	/*
+[1단계:개념] 1. js에서 DOM의 이벤트 구성요소를 기술하고, 기본예제를 통해서 구성요소의 역할을 설명하세요.
+[1단계:개념] 2. DOM이 한개인 경우, 여러 개인 경우에 click이벤트 처리 방법의 차이점을 예제를 통해 설명하세요
+[1단계:확인] 3. h2로 구성된 5개의 도서명리스트 하고, 클릭시 마다, 아래의 p태그에 해당 도서를 담는 처리흘 하세요.
+[1단계:확인] 4. key이벤트 중에 바로 this를 사용하는 경우의 의미와 왼쪽화살표를 클릭시, 카운트를 감소하고, 오른쪽 화살표 클릭시 카운트를
+	      증가하는 처리를 하세요.
+[1단계:개념] 5. 테이블의 구성요소를 기술하세요
+	table: 표 전체를 담는 컨테이너
+	caption: 제목
+	thead: 헤딩 셀 그룹
+	tbody: 데이터 셀 그룹
+	tfoot: 바닥 셀 그룹
+	th: 열 제목 셀
+	tr: 행 단위 데이터를 포함하는 그룹
+	td: 열 데이터 셀
+
+
+[1단계:설치] 8. 오라클 설치 과정을 ppt를 캡처해서 정리하고, 제출하세요.
+	*/
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        물건명: <input type="text" name="prodName" value="">
+        <input type="button" id="regBtn" value="물건등록">
+    </form>
+
+</body>
+<script>
+    // name="prodName" ==> js 식별자로 "[속성=속성값]"
+    var prodNameOb = document.querySelector("[name=prodName]")
+    var regBtnOb = document.querySelector("#regBtn")
+    regBtnOb.onclick=function(){
+        // 입력 후에, 버튼을 클릭시, 입력한 물건명 가져오기.
+        alert("등록한 물건명: "+prodNameOb.value)
+    }
+    /*
+    ex) a04_orderMenu.html
+    주문할 음식:[][주문]
+    주문 클릭시, 입력된 주문할 음식 alert()으로 출력..
+    */
+    
+</script>
+</html>

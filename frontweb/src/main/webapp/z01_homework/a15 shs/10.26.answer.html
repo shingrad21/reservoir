@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   구매할 물건 가격: <input type="text" name="price">
+   <h3>물건의 가격과 총액</h3>
+   <table border size="2" id="tableTab">
+    <thead><tr><th>번호</th><th>물건의 가격</th></tr></thead>
+    <tbody></tbody>
+   </table>
+    <script>
+        var priceOb = document.querySelector("[name=price]")
+        var tbodyOb = document.querySelector("#tabaleTab tbody")
+        var cnt = 1;
+        priceOb.onkeyUp=function(){
+            if(event.keyCode==13){
+                tbodyOb.innerHTML+=`<tr><th>${cnt++}</th><th>${this.value}</th></tr>`
+                this.value=""
+                this.focus()
+            }
+            
+        }
+        // [1단계:확인] 3. 다음의 내용을 enter키를 통해서 입력 처리해보세요.(테이블처리 및 최하단에 누적 총액계산)
+        //       구매할 물건의 가격:[   ]
+        //       구매한물건가격
+	    //   1000
+	    //   2000
+	    //   총액:@@@
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>콤보박스 만들기</title></head>
+<body>
+<h3>오늘 점심은?</h3>
+<hr>
+<form>
+	<!-- 
+		select를 통해서 option값을 선택해준다.
+		2. select name을 기준으로 key tjfwjdehlrh
+		3. 선택된 value이 전송이 되는데,
+		4. option value가 있으면 label상관없이 value값 전송
+		5. option value가 없으면 label있는 간에 value로 설정되어 전송
+	 -->
+	<select name="china">
+		<option value="1">짜장면</option>
+		<option value="2" selected>짬뽕</option>
+		<option value="3">탕수육</option>
+	</select><br>
+	한국음식:
+	<select name="korean">
+		<option value="1">짜장면</option>
+		<option value="2" selected>짬뽕</option>
+		<option value="3">탕수육</option>
+	</select>
+	<input type="submit"/>
+</form>
+</body>
+</html>

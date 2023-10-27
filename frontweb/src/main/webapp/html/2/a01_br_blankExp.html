@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>안녕하세요..</h2>
+    <p>여기에서도 표시 ^^</p>
+</body>
+<script>
+    // ex) a01_br_blankExp.html
+        //     <h2>안녕하세요</h2> ==> 클릭시 마다 공백 !가 추가처리
+    var h20b = document.querySelector("h2") 
+    var pOb = document.querySelector("p")
+    var cnt =1
+    h20b.onclick = function(){
+        // h20b.innerHTML+=cnt+") &nbsp;!"
+        this.innerHTML+=cnt+") &nbsp;!"
+        pOb.innerHTML+=cnt+++") 안녕하세요<br>"
+    }   
+</script>
+</html>

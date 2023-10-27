@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script>
+	// ctrl+shift+f : 자동 소스 정렬
+	//function showAll(helloFun){
+		//alert("익명함수 전달함수 처리")
+		//helloFun() // 선언된 내용을 실행
+	//}
+	//showAll(function(){alert("익명함수 호출!!")})
+	// ex) callParam함수로 매개변수로 greet을 전달하고 
+	//		alert("안녕하세요 포함한 함수")
+	//		greet() // 처리해놓고, 익명함수 전달해보세요.
+	function callParam(greet){
+		alert("안녕하세요 포함한 함수")
+		greet()
+	}
+	callParam(function(){alert("익명함수 전달")})
+	
+
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

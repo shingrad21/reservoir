@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // 함수를 선언합니다.
+        function test(name) {
+            var output = 'Hello ' + name + ' .. !';
+            return function () {
+                alert(output);
+            };
+        }
+        // 출력합니다.
+        test('JavaScript')(); // 함수를 return 했기 때문에 ()붙인다.
+    </script>
+</head>
+<body>
+
+</body>
+</html>

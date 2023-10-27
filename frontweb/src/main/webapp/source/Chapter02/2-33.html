@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // 변수를 선언합니다.
+        var cup = 'Coffee';
+        cup = 'green Tea'; // green tea가 coffee 덮어쓴다
+        cup += 'Water'; // green tea water 출력
+        // 출력합니다.
+        // Drink water
+        alert('Drink ' + cup + '..!');
+        // ex) 문자열 대입 처리
+        //      orderMenu를 통해서 라인별로
+        //      주문한 메뉴를 할당하고 누적 처리하여
+        //      alert에 주문한 메뉴는 @@@, @@@, @@로 처리
+        var orderMenu = "짜장면,"
+        orderMenu += "짬뽕," // 누적처리해준다.
+        orderMenu += "군만두"
+        alert("주문한 메뉴:" +orderMenu);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

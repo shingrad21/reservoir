@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>연예인 사진</p>
+<img src = https://file2.nocutnews.co.kr/newsroom/image/2021/12/21/202112211421352358_0.jpg 
+        width="300" height="200";>
+<img src = https://thumb.mt.co.kr/06/2021/07/2021071413465931224_1.jpg/dims/optimize/ 
+        width="300" height="200";>        
+<h2 onclick = "lgimg()">커져라</h2>
+<h2 onclick = "smimg()">작아져라</h2>
+<script>
+    var imgs = document.querySelectorAll("img")
+    function lgimg(){
+        imgs[0].width+=20; imgs[0].height+=20;
+        imgs[1].width+=20; imgs[1].height+=20;
+    }
+    function smimg(){
+        imgs[0].width-=20; imgs[0].height-=20;
+        imgs[1].width-=20; imgs[1].height-=20;
+    }
+    // 0.5초마다 커지는 처리
+    var setInt = setInterval(function(){
+        lgimg();
+    },5000)    
+</script>
+
+</body>
+</html>
